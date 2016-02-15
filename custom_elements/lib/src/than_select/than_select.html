@@ -1,0 +1,16 @@
+<paper-dropdown-menu
+ [label]="displayText"
+ [disabled]="disabled"
+ [invalid]="invalid">
+ <paper-menu
+   class="dropdown-content"
+   [selected]="value"
+   (selected-changed)="value = $event">
+   <paper-item
+     *ngFor="#option of options"
+     [disabled]="option.disabled"
+     [value]="option.value">
+     {{option.displayText}}
+   </paper-item>
+ </paper-menu>
+</paper-dropdown-menu>

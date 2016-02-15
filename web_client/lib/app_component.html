@@ -1,0 +1,30 @@
+<h1>My First Angular 2 App</h1>
+<than-section>
+  <div class="">
+    section example
+  </div>
+</than-section>
+
+<than-section>
+  <than-select label="my Select">
+    <than-select-option label="One" [value]='1'></than-select-option>
+    <than-select-option label="Tw0" [value]='2'></than-select-option>
+    <than-select-option label="three" [value]='3'></than-select-option>
+  </than-select>
+</than-section>
+
+<than-section>
+  <than-select label="my Select 2">
+    <than-select-option label="One" [value]='1'></than-select-option>
+    <than-select-option [disabled]="true" label="Tw0" [value]='2'></than-select-option>
+    <than-select-option [disabled]="true" label="three" [value]='3'></than-select-option>
+  </than-select>
+</than-section>
+
+<than-section>
+  <than-select [disabled]="true" label="my Select 2">
+    <than-select-option label="One" [value]='1'></than-select-option>
+    <than-select-option label="Tw0" [value]='2'></than-select-option>
+    <than-select-option label="three" [value]='3'></than-select-option>
+  </than-select>
+</than-section>
